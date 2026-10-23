@@ -1,0 +1,29 @@
+{
+  "name": "agent-team",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Multi-agent software engineering team built on the Claude Agent SDK. One repo per run.",
+  "scripts": {
+    "run": "tsx src/run.ts",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint .",
+    "test": "vitest run"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@anthropic-ai/claude-agent-sdk": "^0.3.308",
+    "dotenv": "^18.0.8",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.5",
+    "eslint": "^10.13.0",
+    "tsx": "^4.23.15",
+    "typescript": "^6.0.3",
+    "typescript-eslint": "^8.72.0",
+    "vitest": "^4.1.12"
+  }
+}
